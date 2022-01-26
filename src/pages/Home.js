@@ -40,7 +40,7 @@ const Home = () => {
                 </Col>
                 <Col md={2} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <Button variant={"danger"} style={{fontSize: '14px', padding: '4px'}}
-                            onClick={() => alert(`${data.name} has been blocked`)}>block</Button>
+                            onClick={() => alert(`${data.name} has been blocked`)}>Block</Button>
 
                 </Col>
             </Row>

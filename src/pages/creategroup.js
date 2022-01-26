@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 import Navbar from "../components/Navbar";
 import {Button, Row, Col, Container} from "react-bootstrap";
+
 const Creategroup = () => {
     return(
 
         <div>
             <Navbar/>
-            <div style={{height:'50vh', border: '4px solid #007bff'}}>
-                <Container>
-                    <Row style={{float:"none", margin:"0 auto", paddingTop:"10px"}}>
-                        Enter the name
+            
+                <Container style={{height:'50vh', border: '4px solid #007bff', justifyContent:"center", alignItems:"center"}}>
+                    <Row style={{float:"none", margin:"auto", paddingTop:"20px", color:"black", justifyContent:"center", alignItems:"center"}}>
+                       <br></br> <h4>Select a name for the group</h4> <br></br>
                     </Row>
-                    <Row style={{float:"none", margin:"0 auto", paddingTop:"10px"}}>
-                        <input type="text"></input>
+                    <Row style={{float:"none", margin:"0 auto", paddingTop:"10px" , justifyContent:"center", alignItems:"center"}}>
+                        <input type="text" placeholder='group name'></input>
                     </Row>
-                    <Row style={{float:"none", margin:"0 auto", paddingTop:"10px"}}>
-                        <Button variant="success">Create</Button>
+                    <Row style={{float:"none", margin:"0 auto", paddingTop:"30px" , justifyContent:"center", alignItems:"center"}}>
+                    <Button variant={"success"} style={{fontSize: '14px', padding: '10px', fontSize:"16px"}}
+                            onClick={() => alert(`Created *example* group`)}>Create</Button>
                     </Row>
                 </Container>
-            </div>
+            
         </div>
     );
 }

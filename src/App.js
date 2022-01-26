@@ -13,6 +13,8 @@ import Chatprivate from "./pages/chatprivate";
 import Profile from "./pages/profile";
 import Creategroup from "./pages/creategroup";
 import Requestlist from "./pages/requestlist";
+import Search from "./pages/search";
+import Suggestion from "./pages/suggestion";
 
 
 function About() {
@@ -66,6 +68,12 @@ function App() {
                 </Route>
                 <Route path="/requestlist">
                     < Requestlist/>
+                </Route>
+                <Route path="/search">
+                    < Search/>
+                </Route>
+                <Route path="/suggestion">
+                    < Suggestion/>
                 </Route>
             </Switch>
 
