@@ -11,6 +11,9 @@ import Setting from "./pages/setting";
 import Home from "./pages/Home";
 import Chatprivate from "./pages/chatprivate";
 import Profile from "./pages/profile";
+import Creategroup from "./pages/creategroup";
+import Requestlist from "./pages/requestlist";
+
 
 function About() {
     return (
@@ -57,6 +60,12 @@ function App() {
                 </Route>
                 <Route path="/profile">
                     < Profile/>
+                </Route>
+                <Route path="/creategroup">
+                    < Creategroup/>
+                </Route>
+                <Route path="/requestlist">
+                    < Requestlist/>
                 </Route>
             </Switch>
 

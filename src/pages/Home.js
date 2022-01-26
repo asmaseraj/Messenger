@@ -5,16 +5,15 @@ import {Button, Col, Container, Row} from "react-bootstrap";
 
 const data = [{
     id: '1',
-    name: 'asma',
+    name: 'Ali',
     pictureSrc: 'https://img.icons8.com/color-glass/48/ffffff/morty-smith.png',
-    message: 'salam',
-}, {id: '2', name: 'bahar', message: 'che khabar?'}, {
+    message: 'Hello.',
+}, {id: '2', name: 'Bahar', message: "I'm fine thanks.?"}, {
     id: '2',
-    name: 'bahar',
-    message: 'che khabar?',
+    name: 'Nargol',
+    message: 'what a nice day.',
     pictureSrc: "https://img.icons8.com/color-glass/48/ffffff/morty-smith.png",
-}, {id: '2', name: 'bahar', message: 'che khabar?',pictureSrc: "https://img.icons8.com/color-glass/48/ffffff/morty-smith.png",}]
-
+}, {id: '2', name: 'Group 1', message: "let's go out today.",pictureSrc: 'https://img.icons8.com/color-glass/48/ffffff/morty-smith.png'}]
 
 const Home = () => {
 
@@ -52,7 +51,7 @@ const Home = () => {
         <div>
 
             <Navbar/>
-            <div style={{height:'50vh', border: '4px solid black'}}>
+            <div style={{height:'50vh', border: '4px solid #007bff'}}>
                 {data.map((d) => RenderMessage(d))}
             </div>
 

@@ -6,7 +6,7 @@ const Setting = () => {
     return (
         <div>
             <Navbar />
-            <div style={{ height: '50vh', border: '4px solid black' }}>
+            <div style={{ height: '50vh', border: '4px solid #007bff' }}>
                 <Container style={{ paddingTop:'10px',height:'100%'}}>
                     <Row style={{}}>
                         <Col sm={9} style={{fontSize:'30px', color:'black'}}>

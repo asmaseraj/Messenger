@@ -9,7 +9,8 @@ const RenderMessage = (message) => (
     message.isSenderMe ?
         <div style={{ width: '100%', direction: "rtl" }}>
             <div style={{
-                backgroundColor: 'lightGreen',
+                color:'white',
+                backgroundColor: 'black',
                 width: 'max-content',
                 padding: '8px',
                 borderRadius: '4px',
@@ -21,7 +22,8 @@ const RenderMessage = (message) => (
         <div>
             <div style={{
                 direction: "ltr",
-                backgroundColor: 'green',
+                color:'black',
+                backgroundColor: 'white',
                 width: 'max-content',
                 padding: '8px',
                 borderRadius: '4px',
@@ -65,16 +67,16 @@ const Chatprivate = () => {
 
             <div style={{ height: '50vh', border: '1px solid black' }}>
 
-                <div style={{ backgroundColor: 'lightBlue', borderBottom: 'solid 1px', width: '100%' }}>
+                <div style={{ backgroundColor: 'white', border: 'solid 2px gray', width: '100%' }}>
                     <img style={{ borderRight: 'solid 1px', marginRight: '4px' }}
                         src="https://img.icons8.com/color-glass/48/ffffff/morty-smith.png" />
                     {location.state.data}
                 </div>
-                <div style={{ backgroundColor: 'lightGray', padding: '8px', width: '100%', height: '74%' }}>
+                <div style={{ background: 'linear-gradient(90deg, rgba(238,199,216,1) 0%, rgba(189,212,238,1) 100%)', padding: '8px', width: '100%', height: '74%' }}>
                     {messages.map((message) => RenderMessage(message))}
                 </div>
                 <div style={{ display: 'flex', flexDirection: "row", height: '12.5%' }}>
-                    <input type='text' style={{ width: "100%", border: 'solid 6px yellow' }} />
+                    <input type='text' style={{ width: "100%", border: 'solid 6px lightBlue' }} />
                     <Button>send</Button>
                 </div>
 
