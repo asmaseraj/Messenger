@@ -23,7 +23,7 @@ body {
 	margin-bottom: 30px;
 	text-align: center;
 }
-.signup-form form {		
+.signup-form form {
 	border-radius: 1px;
 	margin-bottom: 15px;
 	background: #fff;
@@ -42,7 +42,7 @@ body {
 	min-height: 38px;
 	box-shadow: none !important;
 	border-width: 0 0 1px 0;
-}	
+}
 .signup-form .input-group-addon {
 	max-width: 42px;
 	text-align: center;
@@ -50,21 +50,19 @@ body {
 	border-bottom: 1px solid #e1e1e1;
 	padding-left: 5px;
 }
-.signup-form .btn, .signup-form .btn:active {        
+.signup-form .btn, .signup-form .btn:active {
 	font-size: 16px;
 	font-weight: bold;
-	background: #19aa8d !important;
 	border-radius: 3px;
 	border: none;
 	min-width: 140px;
 }
 .signup-form .btn:hover, .signup-form .btn:focus {
-	background: #179b81 !important;
 }
 .signup-form a {
-	color: #19aa8d;
+
 	text-decoration: none;
-}	
+}
 .signup-form a:hover {
 	text-decoration: underline;
 }

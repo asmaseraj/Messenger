@@ -1,8 +1,9 @@
 import React from "react";
 import '../style.css';
-
+import {useHistory} from "react-router-dom";
 
 export default function signup() {
+    const router = useHistory();
     return (
         <div>
             <div class="signup-form">
@@ -23,10 +24,10 @@ export default function signup() {
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block btn-lg" style={{backgroundColor:'blue'}} onClick={"./Home"}>Sign up
-                        </button>
-                    </div>
+                    {/*<div class="form-group">*/}
+                    <button type="submit" class="btn btn-primary btn-block btn-lg"  onClick={()=>router.push('\home')}>Sign up
+                    </button>
+                    {/*</div>*/}
                 </form>
             </div>
         </div>
