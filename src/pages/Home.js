@@ -13,8 +13,7 @@ const data = [{
     name: 'bahar',
     message: 'che khabar?',
     pictureSrc: "https://img.icons8.com/color-glass/48/ffffff/morty-smith.png",
-}, {id: '2', name: 'bahar', message: 'che khabar?',pictureSrc: "https://img.icons8.com/color-glass/48/ffffff/morty-smith.png",},
-    {id: '2', name: 'bahar', message: 'che khabar?',pictureSrc: "https://img.icons8.com/color-glass/48/ffffff/morty-smith.png",}]
+}, {id: '2', name: 'bahar', message: 'che khabar?',pictureSrc: "https://img.icons8.com/color-glass/48/ffffff/morty-smith.png",}]
 
 
 const Home = () => {
@@ -53,7 +52,7 @@ const Home = () => {
         <div>
 
             <Navbar/>
-            <div>
+            <div style={{height:'50vh', border: '4px solid black'}}>
                 {data.map((d) => RenderMessage(d))}
             </div>
 

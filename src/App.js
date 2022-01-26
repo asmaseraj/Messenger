@@ -8,9 +8,9 @@ import {
 
 import Signup from "../src/pages/signup";
 import Setting from "./pages/setting";
-import Home from "./pages/Home"
+import Home from "./pages/Home";
 import Chatprivate from "./pages/chatprivate";
-
+import Profile from "./pages/profile";
 
 function About() {
     return (
@@ -54,6 +54,9 @@ function App() {
                 </Route>
                 <Route path="/chat">
                     < Chatprivate/>
+                </Route>
+                <Route path="/profile">
+                    < Profile/>
                 </Route>
             </Switch>
 
