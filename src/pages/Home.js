@@ -5,15 +5,15 @@ import {Button, Col, Container, Row} from "react-bootstrap";
 
 const data = [{
     id: '1',
-    name: 'Ali',
-    pictureSrc: 'https://img.icons8.com/color-glass/48/ffffff/morty-smith.png',
+    name: 'Bahar',
+    pictureSrc: "https://img.icons8.com/doodle/48/000000/fortune-teller.png",
     message: 'Hello.',
-}, {id: '2', name: 'Bahar', message: "I'm fine thanks.?"}, {
+}, {id: '2', name: 'Ali', message: "I'm fine thanks.?", pictureSrc: "https://img.icons8.com/doodle/48/000000/manager--v1.png"}, {
     id: '2',
     name: 'Nargol',
     message: 'what a nice day.',
-    pictureSrc: "https://img.icons8.com/color-glass/48/ffffff/morty-smith.png",
-}, {id: '2', name: 'Group 1', message: "let's go out today.",pictureSrc: 'https://img.icons8.com/color-glass/48/ffffff/morty-smith.png'}]
+    pictureSrc: "https://img.icons8.com/doodle/48/000000/user-female-red-hair.png",
+}, {id: '2', name: 'Group 1', message: "let's go out today.",pictureSrc: "https://img.icons8.com/doodle/48/000000/they.png"}]
 
 const Home = () => {
 
@@ -25,7 +25,7 @@ const Home = () => {
 
                 <Col md={10}>
                     <Row style={{justifyContent: 'center', alignContent: 'center', display: "flex", cursor: "pointer"}}
-                         onClick={() => router.push("/chat", {data: data.name})}>
+                         onClick={() => router.push("/chat", {data: data.name, pic: data.pictureSrc})}>
 
                         <Col md={3} style={{borderRight: "solid 1px", display: "flex", justifyContent: "center"}}>
                             <img src={data.pictureSrc} />

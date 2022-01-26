@@ -39,10 +39,10 @@ function App() {
 
             <Switch>
                 <Route exact path="/">
-                    <Setting/>
+                    <Signup/>
                 </Route>
 
-                <Route path="/home">
+                <Route path="/Home">
                     <Home/>
                 </Route>
                 <Route path="/about">

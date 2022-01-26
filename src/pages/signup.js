@@ -24,7 +24,7 @@ export default function signup() {
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block btn-lg" href="./register2.js">Sign up
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" style={{backgroundColor:'blue'}} onClick={"./Home"}>Sign up
                         </button>
                     </div>
                 </form>
