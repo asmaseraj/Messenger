@@ -10,7 +10,7 @@ import Chatgroup from './chatgroup';
 import Setting from './setting';
 import Search from './search';
 import Selfaccount from './selfaccount';
-import Mainpage from './mainpage';
+import Mainpage from './Home';
 
 function Grouppage() {
   return (
@@ -39,7 +39,7 @@ function Grouppage() {
 
         <hr />
 
-        
+
         <Switch>
           <Route exact path="/">
             <Home />

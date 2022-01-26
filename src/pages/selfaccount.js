@@ -6,30 +6,31 @@ import {
     Link
   } from "react-router-dom";
   import Otheraccount from './otheraccount';
-  import Type from './type';
-  import Mainpage from './mainpage';
+  import Setting from './setting';
+  import Mainpage from './Home';
+import Grouppage from './grouppage';
 
 
 
 
-function Chatprivate() {
+function Selfaccount() {
     return (
         <Router>
             <div>
                 <ul>
                     <li>
-                        <Link to="/">Private chat</Link>
+                        <Link to="/">Your account</Link>
                     </li>
                     <li>
-                        <Link to="/otheraccount">See the account of your friend</Link>
+                        <Link to="/mainpage">Go to main page</Link>
                     </li>
                     <li>
-                        <Link to="/type">Type something</Link>
+                        <Link to="/grouppage">go to groups</Link>
                     </li>
                     <li>
-                        <Link to="/mainpage">Go back</Link>
+                        <Link to="/setting">setting</Link>
                     </li>
-                   
+
                 </ul>
 
                 <hr />
@@ -39,14 +40,14 @@ function Chatprivate() {
                     <Route exact path="/">
                         <Home />
                     </Route>
-                    <Route path="/otheraccount">
-                        <Otheraccount />
-                    </Route>
-                    <Route path="/type">
-                        <Type />
-                    </Route>
                     <Route path="/mainpage">
                         <Mainpage />
+                    </Route>
+                    <Route path="/Grouppage">
+                        <Grouppage />
+                    </Route>
+                    <Route path="/setting">
+                        <Setting />
                     </Route>
                 </Switch>
             </div>
@@ -58,10 +59,10 @@ function Chatprivate() {
 function Home() {
     return (
       <div>
-        <h2>Private chat </h2>
+        <h2>Your Account</h2>
       </div>
     );
   }
 
 
-export default Chatprivate;
+export default Selfaccount;

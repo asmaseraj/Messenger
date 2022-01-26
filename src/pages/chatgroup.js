@@ -5,32 +5,31 @@ import {
     Route,
     Link
   } from "react-router-dom";
-  import Otheraccount from './otheraccount';
-  import Setting from './setting';
-  import Mainpage from './mainpage';
-import Grouppage from './grouppage';
+  import Groupdescription from './groupdescription';
+  import Type from './type';
+  import Mainpage from './Home';
 
 
 
 
-function Selfaccount() {
+function Chatgroup() {
     return (
         <Router>
             <div>
                 <ul>
                     <li>
-                        <Link to="/">Your account</Link>
+                        <Link to="/">Group chat</Link>
                     </li>
                     <li>
-                        <Link to="/mainpage">Go to main page</Link>
+                        <Link to="/groupdescription">Go to group description</Link>
                     </li>
                     <li>
-                        <Link to="/grouppage">go to groups</Link>
+                        <Link to="/type">Type something</Link>
                     </li>
                     <li>
-                        <Link to="/setting">setting</Link>
+                        <Link to="/mainpage">Go back</Link>
                     </li>
-                   
+
                 </ul>
 
                 <hr />
@@ -40,14 +39,14 @@ function Selfaccount() {
                     <Route exact path="/">
                         <Home />
                     </Route>
+                    <Route path="/groupdescription">
+                        <Groupdescription />
+                    </Route>
+                    <Route path="/type">
+                        <Type />
+                    </Route>
                     <Route path="/mainpage">
                         <Mainpage />
-                    </Route>
-                    <Route path="/Grouppage">
-                        <Grouppage />
-                    </Route>
-                    <Route path="/setting">
-                        <Setting />
                     </Route>
                 </Switch>
             </div>
@@ -59,10 +58,10 @@ function Selfaccount() {
 function Home() {
     return (
       <div>
-        <h2>Your Account</h2>
+        <h2>Group chat</h2>
       </div>
     );
   }
 
 
-export default Selfaccount;
+export default Chatgroup;

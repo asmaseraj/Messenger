@@ -5,31 +5,31 @@ import {
     Route,
     Link
   } from "react-router-dom";
-  import Groupdescription from './groupdescription';
-  import Type from './type';
-  import Mainpage from './mainpage';
+  import Blocking from './blocking';
+  import Mainpage from './Home';
+import Friending from './friending';
 
 
 
 
-function Chatgroup() {
+function Otheraccount() {
     return (
         <Router>
             <div>
                 <ul>
                     <li>
-                        <Link to="/">Group chat</Link>
+                        <Link to="/">Your account</Link>
                     </li>
                     <li>
-                        <Link to="/groupdescription">Go to group description</Link>
+                        <Link to="/friending">Send friend request to this account</Link>
                     </li>
                     <li>
-                        <Link to="/type">Type something</Link>
+                        <Link to="/blocking">Block this account</Link>
                     </li>
                     <li>
                         <Link to="/mainpage">Go back</Link>
                     </li>
-                   
+
                 </ul>
 
                 <hr />
@@ -39,14 +39,14 @@ function Chatgroup() {
                     <Route exact path="/">
                         <Home />
                     </Route>
-                    <Route path="/groupdescription">
-                        <Groupdescription />
-                    </Route>
-                    <Route path="/type">
-                        <Type />
-                    </Route>
                     <Route path="/mainpage">
                         <Mainpage />
+                    </Route>
+                    <Route path="/friending">
+                        <Friending />
+                    </Route>
+                    <Route path="/Blocking">
+                        <Blocking />
                     </Route>
                 </Switch>
             </div>
@@ -58,10 +58,10 @@ function Chatgroup() {
 function Home() {
     return (
       <div>
-        <h2>Group chat</h2>
+        <h2>Other's Account</h2>
       </div>
     );
   }
 
 
-export default Chatgroup;
+export default Otheraccount;

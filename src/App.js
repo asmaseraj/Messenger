@@ -1,69 +1,66 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
 } from "react-router-dom";
 
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
-}
+import Signup from "../src/pages/signup";
+import Setting from "./pages/setting";
+import Home from "./pages/Home"
+import Chatprivate from "./pages/chatprivate";
+
 
 function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
+    return (
+        <div>
+            <h2>About</h2>
+        </div>
+    );
 }
 
 function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
-    </div>
-  );
+    return (
+        <div>
+            <h2>Dashboard</h2>
+        </div>
+    );
 }
 
 function App() {
-  return (
-    <Router>
-    <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/dashboard">Dashboard</Link>
-        </li>
-      </ul>
+    return (
+        <Router>
 
-      <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/dashboard">
-          <Dashboard />
-        </Route>
-      </Routes>
-    </div>
-  </Router>
+            <Switch>
+                <Route exact path="/">
+                    <Setting/>
+                </Route>
 
-  );
+                <Route path="/home">
+                    <Home/>
+                </Route>
+                <Route path="/about">
+                    <About/>
+                </Route>
+                <Route path="/dashboard">
+                    <Dashboard/>
+                </Route>
+                <Route path="/signup">
+                    < Signup/>
+                </Route>
+                <Route path="/setting">
+                    < Setting/>
+                </Route>
+                <Route path="/chat">
+                    < Chatprivate/>
+                </Route>
+            </Switch>
+
+        </Router>
+
+    );
 }
-
-
 
 
 export default App;

@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import Friending from "./friending";
-import Mainpage from "./mainpage";
+import Mainpage from "./Home";
 import Blocking from "./blocking";
 
 
@@ -27,7 +27,7 @@ function Searchresult() {
           <li>
             <Link to="/mainpage">go back</Link>
           </li>
-          
+
         </ul>
 
         <hr />

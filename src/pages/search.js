@@ -5,7 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Mainpage from "./mainpage";
+import Mainpage from "./Home";
 import Searchresult from './searchresult';
 
 
